@@ -14,6 +14,6 @@ module.exports = function() {
 
     winston.add(winston.transports.File, { filename: 'logfile.log' });
     winston.add(winston.transports.MongoDB, {
-        db: 'mongodb://localhost/vidly'
+        db: 'mongodb://192.168.99.100:27017/vidly'
     });
 };
